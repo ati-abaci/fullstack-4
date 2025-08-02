@@ -14,6 +14,7 @@ app.use(express.json());
 app.use("/api/directories", directoryRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api", taskRoutes);
 
 console.log("Mongo URI:", process.env.MONGO_URI);
 
